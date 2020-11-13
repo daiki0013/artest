@@ -14,11 +14,10 @@
     </a-assets>
 　　　　　　　　<!-- こっからARの世界。マーカー上になにを展開するかを書く -->
     <a-marker type='pattern' url='pattern-starts.patt'>
-    <a-sphere scale=".1 .1 .1" position="0 .5 0" color="#f00">
-      <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
-      </a-animation>
-    </a-sphere>
-        <a-text value="artest" position="0 1.3 0" align="center"></a-text>
+          <a-obj-model
+          src="#test-obj"
+          scale="0.005 0.005 0.005"
+          position="0 0.5 0">
     </a-marker>
     <!-- arなのでこんな感じでカメラが必要らしい。 -->
     <a-entity camera></a-entity>
